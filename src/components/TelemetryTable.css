@@ -1,0 +1,24 @@
+.telemetry-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 8px;
+  overflow-x: auto;
+  background-color: #111;
+}
+
+.telemetry-row {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  min-width: 90px;
+  white-space: nowrap;
+}
+.telemetry-scroll-container {
+  max-height: calc(100vh - 150px); /* высота окна минус шапка и кнопка */
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}

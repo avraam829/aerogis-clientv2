@@ -1,0 +1,36 @@
+/* Основной контейнер */
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Левый сайдбар */
+.sidebar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+
+/* Карта в центре */
+.map-wrapper {
+  flex-grow: 1;
+  height: 100vh;
+  position: relative;
+}
+
+/* Правая панель */
+.right-panel {
+  width: 300px;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+/* Расположение блока координат */
+.coordinates-display {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

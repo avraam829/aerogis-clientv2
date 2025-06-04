@@ -1,0 +1,43 @@
+.right-panel-container {
+  width: 400px;
+  background: #ecf0f1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-header {
+  display: flex;
+  background: #bdc3c7;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.tab-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c3e50;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.tab-header button:hover {
+  background: #d1d8e0;
+  border-radius: 5px;
+}
+
+.panel-body {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.right-panel {
+  width: 250px;
+  height: 100vh;
+  background: #ecf0f1;
+  padding: 20px;
+}
