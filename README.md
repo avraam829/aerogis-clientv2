@@ -1,8 +1,47 @@
-# React + Vite
+# AeroGIS Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AeroGIS Client is a desktop application for planning UAV flights and receiving telemetry. It combines React, Mapbox and Electron to provide an interactive map interface where you can create polygons, generate waypoints and communicate with a drone using the MAVLink protocol.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 18 or later
+- npm
+- A Mapbox access token for map rendering
+
+## Setup
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env` file in the project root and specify your Mapbox token:
+
+   ```
+   VITE_MAPBOX_ACCESS_TOKEN=your-mapbox-token
+   ```
+
+## Running in Development
+
+Start the application with hot reload:
+
+```bash
+npm run dev
+```
+
+This command launches the Vite development server and automatically starts Electron.
+
+## Building for Production
+
+To produce a distributable package run:
+
+```bash
+npm run build
+```
+
+You can also run the compiled version locally with:
+
+```bash
+npm start
+```
