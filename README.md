@@ -16,7 +16,9 @@ AeroGIS Client is a desktop application for planning UAV flights and receiving t
    npm install
    ```
 
-2. Create a `.env` file in the project root and specify your Mapbox token:
+2. Create a `.env` file in the project root and specify your Mapbox token. The
+   `.env` file is listed in `.gitignore`, so the token won't be committed to the
+   repository:
 
    ```
    VITE_MAPBOX_ACCESS_TOKEN=your-mapbox-token
