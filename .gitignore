@@ -27,3 +27,4 @@ release
 aerogis-client.zip
 src/mavlink_definitions/ardupilotmega.xml
 src/components/еее
+.env
